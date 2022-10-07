@@ -2,11 +2,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    background-color: black;
+    background-color: rgb(5, 5, 5);
 }
 
 .principal {
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 13rem;
 }
 .animate__animated.animate__fadeInUp {
@@ -35,7 +35,6 @@ body {
 .block1,
 .block2 {
     text-align: start;
-    height: 450px;
 }
 
 .block1,
@@ -43,8 +42,16 @@ body {
     padding-left: 0.4rem;
 }
 
+.block2 {
+    display: flex;
+    align-items: center;
+}
+
+.block2 li{
+    padding: 1.5rem 0;
+}
+
 .block1 h1 {
-    padding-top: 3rem;
     font-size: 2rem;
     font-weight: 900;
     color: red;
@@ -53,7 +60,6 @@ body {
 
 .block1 h2 {
     font-size: 2.3rem;
-    padding-top: 3rem;
     font-weight: 700;
     color: #970000;
     font-family: 'Allerta Stencil', sans-serif;
@@ -61,7 +67,7 @@ body {
 
 .block1 h3 {
     font-size: 3.7rem;
-    padding-top: 3rem;
+
     font-weight: 700;
     color: red;
     font-family: 'Allerta Stencil', sans-serif;
@@ -74,7 +80,7 @@ body {
 .block2 li {
     font-size: 0.8rem;
     list-style: none;
-    padding-top: 3.7rem;
+
     font-weight: 900;
     font-family: 'Allerta Stencil', sans-serif;
 }
@@ -89,7 +95,8 @@ body {
     height: 25rem;
 }
 #about{
-    margin-bottom: 10rem;
+    background: rgb(20, 20, 20);
+    padding: 5rem 0;
 }
 #picture {
     display: flex;
@@ -112,11 +119,15 @@ body {
     align-items: center;
 }
 #work{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 #work a{
     text-decoration: none;
 }
+.carousel-text h5{
+    margin: 1rem 0 0.3rem;
+}
+
 .carousel-text{
     text-align: center;
 }
@@ -124,7 +135,6 @@ body {
     color: red;
 }
 .carousel-text p{ 
-    
     color: #970000;
 }
 .workSection h3{
@@ -133,11 +143,12 @@ body {
     font-size: 3rem;
     font-family: 'Allerta Stencil', sans-serif;
 }
+
 .container-carousel{
     width: 80%;
 }
 .container-carousel img{
-    border-radius: 10%;
+    border-radius: 1rem;
     width: 100%;
 }
 .contact{
@@ -150,17 +161,19 @@ body {
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+footer {
+    background: rgb(20, 20, 20);
+    margin: 0;
+}
+
 footer h5{
     color: white;
     text-align: center;
     margin-bottom: 2rem;
 }
 footer .container{
-    color: white;
     margin-top: 3rem;
     flex-direction: row;
-    margin-bottom: 1rem;
-    
 }
 footer .container a{ 
     text-decoration: none;
@@ -172,18 +185,13 @@ footer .contact-text{
 footer .row i{
     color: #970000;
 }
-
+.icon {
+    margin: 2rem 0;
+}
 
 
 /* MEDIDAS TABLETAS Y MAS*/
 @media (min-width:768px) {
-
-    .principal,
-    .block1,
-    .block2 {
-        text-align: start;
-        height: 40rem;
-    }
 
     .block1,
     .block2 {
@@ -191,27 +199,23 @@ footer .row i{
     }
 
     .block1 h1 {
-        padding-top: 6rem;
         font-size: 5rem;
         font-weight: 900;
         color: red;
     }
 
     .block1 h2 {
-        padding-top: 3rem;
         font-size: 3rem;
         font-weight: 700;
     }
 
     .block1 h3 {
-        padding-top: 3rem;
         font-size: 7.6rem;
         font-weight: 700;
     }
 
     .block2 li {
         font-size: 1.5rem;
-        padding-top: 5.5rem;
     }
     #picture img {
         width: 22rem;
@@ -226,39 +230,28 @@ footer .row i{
 /*MEDIDAS 2K+*/
 @media (min-width:1024px) {
 
-    .principal,
-    .block1,
-    .block2 {
-        text-align: start;
-        height: 40rem;
-    }
-
     .block1 {
         padding-left: 10rem;
     }
 
     .block1 h1 {
-        padding-top: 6rem;
         font-size: 5rem;
         font-weight: 900;
         color: red;
     }
 
     .block1 h2 {
-        padding-top: 3rem;
         font-size: 3rem;
         font-weight: 700;
     }
 
     .block1 h3 {
-        padding-top: 3rem;
         font-size: 8rem;
         font-weight: 700;
     }
 
     .block2 li {
         font-size: 1.5rem;
-        padding-top: 5.5rem;
     }
     #picture img {
         margin-left: 2rem;
@@ -266,53 +259,11 @@ footer .row i{
         object-fit: cover;
         padding: 1rem;
     }
-    .container-carousel{
-        width: 80%;
-    }
+
     .container-carousel img{
-        border-radius: 10%;
         width: 70%;
     }
     .form-contact{
         width: 60%;
     }  
 }
-
-footer button {
-    margin-left: 50%;
-    width: 30px;
-    height: 30px;
-    bottom: 20px;
-    right: 40px;
-    background-color: #970000;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15px;
-    box-shadow: 2px 2px 3px rgb(141, 0, 0);
-    z-index: 100;
-    border: #db6300;
-    transition: 0.5s;
-    position: fixed;
-  }
-  
-  footer button:hover {
-    transform: scale(1.1);
-  }
-  
-  footer button:active {
-    background-color: #a80000;
-  }
-  
-  .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35%;
-    margin-bottom: 60%;
-    border-bottom: 15px solid white;
-  }
-  
